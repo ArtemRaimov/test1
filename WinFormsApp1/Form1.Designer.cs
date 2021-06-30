@@ -38,14 +38,14 @@ namespace WinFormsApp1
             // 
             // LoginTextBox
             // 
-            this.LoginTextBox.Location = new System.Drawing.Point(104, 76);
+            this.LoginTextBox.Location = new System.Drawing.Point(117, 22);
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.Size = new System.Drawing.Size(125, 27);
             this.LoginTextBox.TabIndex = 0;
             // 
             // PasswordTexBox
             // 
-            this.PasswordTexBox.Location = new System.Drawing.Point(104, 127);
+            this.PasswordTexBox.Location = new System.Drawing.Point(117, 68);
             this.PasswordTexBox.Name = "PasswordTexBox";
             this.PasswordTexBox.Size = new System.Drawing.Size(125, 27);
             this.PasswordTexBox.TabIndex = 1;
@@ -53,7 +53,7 @@ namespace WinFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 76);
+            this.label1.Location = new System.Drawing.Point(56, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 2;
@@ -62,7 +62,7 @@ namespace WinFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 130);
+            this.label2.Location = new System.Drawing.Point(46, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 3;
@@ -70,7 +70,7 @@ namespace WinFormsApp1
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(117, 170);
+            this.LoginButton.Location = new System.Drawing.Point(131, 101);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(94, 29);
             this.LoginButton.TabIndex = 4;
@@ -81,7 +81,7 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(331, 283);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
