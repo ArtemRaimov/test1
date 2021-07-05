@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Practica_2_course
+namespace WinFormsApp1
 {
-    public partial class Редактирование_списка : Form
+    public partial class EditingListsForm : Form
     {
-        public Редактирование_списка()
+        public EditingListsForm()
         {
             InitializeComponent();
         }

@@ -45,6 +45,7 @@ namespace WinFormsApp1
             this.RecipientTextBox = new System.Windows.Forms.TextBox();
             this.SenderTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.ListsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SMTPTextBox
@@ -130,6 +131,7 @@ namespace WinFormsApp1
             this.TemplateButton.TabIndex = 9;
             this.TemplateButton.Text = "Шаблоны";
             this.TemplateButton.UseVisualStyleBackColor = true;
+            this.TemplateButton.Click += new System.EventHandler(this.TemplateButton_Click);
             // 
             // DraftButton
             // 
@@ -139,6 +141,7 @@ namespace WinFormsApp1
             this.DraftButton.TabIndex = 10;
             this.DraftButton.Text = "Черновики";
             this.DraftButton.UseVisualStyleBackColor = true;
+            this.DraftButton.Click += new System.EventHandler(this.DraftButton_Click);
             // 
             // PostponeButton
             // 
@@ -148,6 +151,7 @@ namespace WinFormsApp1
             this.PostponeButton.TabIndex = 11;
             this.PostponeButton.Text = "Отложенная отправка";
             this.PostponeButton.UseVisualStyleBackColor = true;
+            this.PostponeButton.Click += new System.EventHandler(this.PostponeButton_Click);
             // 
             // SendButton
             // 
@@ -157,6 +161,7 @@ namespace WinFormsApp1
             this.SendButton.TabIndex = 12;
             this.SendButton.Text = "Отправить";
             this.SendButton.UseVisualStyleBackColor = true;
+            this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
             // RecipientTextBox
             // 
@@ -181,11 +186,22 @@ namespace WinFormsApp1
             this.label6.TabIndex = 15;
             this.label6.Text = "Имя отправителя:";
             // 
+            // ListsButton
+            // 
+            this.ListsButton.Location = new System.Drawing.Point(284, 344);
+            this.ListsButton.Name = "ListsButton";
+            this.ListsButton.Size = new System.Drawing.Size(134, 29);
+            this.ListsButton.TabIndex = 16;
+            this.ListsButton.Text = "Выбрать список";
+            this.ListsButton.UseVisualStyleBackColor = true;
+            this.ListsButton.Click += new System.EventHandler(this.ListsButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 454);
+            this.Controls.Add(this.ListsButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.SenderTextBox);
             this.Controls.Add(this.RecipientTextBox);
@@ -227,5 +243,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.TextBox RecipientTextBox;
         private System.Windows.Forms.TextBox SenderTextBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button ListsButton;
     }
 }

@@ -1,6 +1,7 @@
-﻿namespace Practica_2_course
+﻿
+namespace WinFormsApp1
 {
-    partial class Отложная_отправка
+    partial class PostponeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,19 +34,19 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(251, 12);
+            this.dateTimePicker1.Location = new System.Drawing.Point(115, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(250, 27);
             this.dateTimePicker1.TabIndex = 0;
             // 
-            // Отложная_отправка
+            // PostponeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(436, 117);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Отложная_отправка";
-            this.Text = "Отложная_отправка";
+            this.Name = "PostponeForm";
+            this.Text = "Отложенная отправка";
             this.ResumeLayout(false);
 
         }
