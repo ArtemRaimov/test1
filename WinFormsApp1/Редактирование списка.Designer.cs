@@ -42,67 +42,81 @@
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(43, 77);
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Почты Сергея"});
+            this.checkedListBox1.Location = new System.Drawing.Point(50, 89);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(141, 94);
+            this.checkedListBox1.Size = new System.Drawing.Size(164, 94);
             this.checkedListBox1.TabIndex = 0;
             // 
             // checkedListBox2
             // 
             this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(203, 77);
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "ssv.19@uni-dubna.ru",
+            "ser20011809@gmail.com"});
+            this.checkedListBox2.Location = new System.Drawing.Point(237, 89);
+            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(162, 94);
+            this.checkedListBox2.Size = new System.Drawing.Size(188, 94);
             this.checkedListBox2.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 61);
+            this.label1.Location = new System.Drawing.Point(47, 70);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.Size = new System.Drawing.Size(107, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Названия списков";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(479, 96);
+            this.button1.Location = new System.Drawing.Point(559, 111);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 55);
+            this.button1.Size = new System.Drawing.Size(90, 63);
             this.button1.TabIndex = 3;
             this.button1.Text = "Удалить";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(386, 96);
+            this.button2.Location = new System.Drawing.Point(450, 111);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 55);
+            this.button2.Size = new System.Drawing.Size(88, 63);
             this.button2.TabIndex = 4;
             this.button2.Text = "Добавить";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(576, 96);
+            this.button3.Location = new System.Drawing.Point(672, 111);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 55);
+            this.button3.Size = new System.Drawing.Size(115, 63);
             this.button3.TabIndex = 5;
             this.button3.Text = "Редактировать название списка";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(21, 27);
+            this.textBox1.Location = new System.Drawing.Point(24, 31);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 20);
+            this.textBox1.Size = new System.Drawing.Size(438, 23);
             this.textBox1.TabIndex = 6;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(444, 13);
+            this.button4.Location = new System.Drawing.Point(518, 15);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 47);
+            this.button4.Size = new System.Drawing.Size(168, 54);
             this.button4.TabIndex = 7;
             this.button4.Text = "Создать новый список";
             this.button4.UseVisualStyleBackColor = true;
@@ -110,17 +124,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(200, 61);
+            this.label2.Location = new System.Drawing.Point(233, 70);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(96, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Адреса в списке";
             // 
             // Редактирование_списка
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 226);
+            this.ClientSize = new System.Drawing.Size(933, 261);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox1);
@@ -130,6 +145,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Редактирование_списка";
             this.Text = "Редактирование_списка";
             this.ResumeLayout(false);
