@@ -1,6 +1,6 @@
-﻿namespace Practica_2_course
+﻿namespace WinFormsApp1
 {
-    partial class Редактирование_списка
+    partial class EditingListsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -131,7 +131,7 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Адреса в списке";
             // 
-            // Редактирование_списка
+            // EditingListsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public partial class MainForm : Form
+    public partial class EditingListsForm : Form
     {
-        public MainForm()
+        public EditingListsForm()
         {
             InitializeComponent();
         }
