@@ -14,6 +14,8 @@ namespace WinFormsApp1
     public partial class LoginForm : Form
     {
         const string pathTextLogPass = @"C:\Users\raimo\source\repos\pass.txt";
+        public string login;
+        public string pasword;
         public LoginForm()
         {
             InitializeComponent();
@@ -21,10 +23,6 @@ namespace WinFormsApp1
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            
-            string login;
-            string pasword;
-
             if (File.Exists(pathTextLogPass))
             {
                 string[] lines = File.ReadAllLines(pathTextLogPass, Encoding.Default);
@@ -34,16 +32,15 @@ namespace WinFormsApp1
                     login = linesDec[0];
                     pasword = linesDec[1];
 
-                    if (login.ToLower() == LoginTextBox.Text.ToLower() && pasword == PasswordTexBox.Text) //Start();
+                    if (login.ToLower() == LoginTextBox.Text.ToLower() && pasword == PasswordTexBox.Text)
                     {
-                        MainForm f = new MainForm();
+                        MainForm f = new MainForm(this);
                         this.Visible = false;
                         f.ShowDialog();
                         this.Close();
                     }
                 }
             }
-
             MessageBox.Show("Такого логина или пароля не существует. \n Повторите ввод или зарегистрируйтесь!");
         }
 
@@ -66,6 +63,16 @@ namespace WinFormsApp1
                 strB[i] = (char)(strB[i] - 2);
 
             return strB.ToString();
+        }
+
+        private void LoginTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PasswordTexBox_TextChanged(object sender, EventArgs e)
+        {
+            PasswordTexBox.PasswordChar = '*';
         }
     }
 }

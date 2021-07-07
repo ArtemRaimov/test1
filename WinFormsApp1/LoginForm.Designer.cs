@@ -43,6 +43,7 @@ namespace WinFormsApp1
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.Size = new System.Drawing.Size(125, 27);
             this.LoginTextBox.TabIndex = 0;
+            this.LoginTextBox.TextChanged += new System.EventHandler(this.LoginTextBox_TextChanged);
             // 
             // PasswordTexBox
             // 
@@ -50,6 +51,7 @@ namespace WinFormsApp1
             this.PasswordTexBox.Name = "PasswordTexBox";
             this.PasswordTexBox.Size = new System.Drawing.Size(125, 27);
             this.PasswordTexBox.TabIndex = 1;
+            this.PasswordTexBox.TextChanged += new System.EventHandler(this.PasswordTexBox_TextChanged);
             // 
             // label1
             // 

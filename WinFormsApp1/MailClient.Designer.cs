@@ -174,7 +174,7 @@ namespace WinFormsApp1
             // 
             this.SenderTextBox.Location = new System.Drawing.Point(463, 34);
             this.SenderTextBox.Name = "SenderTextBox";
-            this.SenderTextBox.Size = new System.Drawing.Size(125, 27);
+            this.SenderTextBox.Size = new System.Drawing.Size(139, 27);
             this.SenderTextBox.TabIndex = 14;
             // 
             // label6
