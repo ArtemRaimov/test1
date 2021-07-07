@@ -16,5 +16,22 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var text = textBox1.Text;
+            checkedListBox1.Items.Add(text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Редактирование_списка redspiska = new Редактирование_списка();
+            redspiska.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
